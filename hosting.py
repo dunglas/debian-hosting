@@ -97,7 +97,7 @@ class Site:
     
     def delete(self):
         """Delete a vhost"""
-        self.desable()
+        self.disable()
         file = os.path.join(AVAILABLE, self.name)
         os.unlink(file)
 
